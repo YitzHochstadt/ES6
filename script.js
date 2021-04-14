@@ -1,11 +1,13 @@
 class Room {
-    constructor(name, length, width, available = true, capacity = 15){
+    constructor(name, length, width, capacity = 15){
         this.name = name;
         this.length = length;
         this.width = width;
-        this.available = available;
+        // this.available = available;
         this.capacity = capacity;
+        
     }
+    available = true;
 
     getArea(){
         return (this.length * this.width);
@@ -26,3 +28,8 @@ console.log(room1.getPerimeter());
 console.log(room2);
 console.log(room2.getArea());
 console.log(room2.getPerimeter());
+
+console.log(room1.capacity);
+console.log(room2.capacity);
+console.log(room1.available);
+console.log(room2.available);
